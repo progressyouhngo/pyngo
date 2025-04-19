@@ -1,161 +1,59 @@
-
 <!DOCTYPE html>
 <html lang="hy">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Առաջընթաց Երիտասարդական ՀԿ</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
-  <style>
-    :root {
-      --main-color: #871c1c;
-    }
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-      scroll-behavior: smooth;
-    }
-    body {
-      font-family: 'Inter', sans-serif;
-      background: #f9f9f9;
-      color: #333;
-    }
-    header {
-      background-color: var(--main-color);
-      color: white;
-      padding: 60px 20px 40px;
-      text-align: center;
-    }
-    header h1 {
-      font-size: 36px;
-      margin-bottom: 10px;
-    }
-    header p {
-      font-size: 18px;
-      opacity: 0.9;
-    }
-    nav {
-      background: white;
-      padding: 12px 20px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      border-bottom: 1px solid #ddd;
-      position: sticky;
-      top: 0;
-      z-index: 100;
-    }
-    nav .logo {
-      font-weight: 800;
-      color: var(--main-color);
-      font-size: 20px;
-    }
-    nav .menu a {
-      margin-left: 20px;
-      text-decoration: none;
-      color: var(--main-color);
-      font-weight: 600;
-    }
-    section {
-      padding: 60px 20px;
-      max-width: 1000px;
-      margin: 0 auto;
-    }
-    h2 {
-      font-size: 28px;
-      color: var(--main-color);
-      margin-bottom: 20px;
-    }
-    .impact-grid {
-      display: flex;
-      gap: 30px;
-      flex-wrap: wrap;
-      justify-content: space-around;
-      margin-top: 20px;
-    }
-    .impact-box {
-      background: white;
-      padding: 20px;
-      border-radius: 10px;
-      width: 200px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-      text-align: center;
-    }
-    .impact-box h3 {
-      color: var(--main-color);
-      font-size: 28px;
-    }
-    footer {
-      background: #eee;
-      padding: 20px;
-      text-align: center;
-      font-size: 14px;
-    }
-  </style>
 </head>
 <body>
-  <nav>
-    <div class="logo">Progress NGO</div>
-    <div class="menu">
-      <a href="#about">Մեր մասին</a>
-      <a href="#vision">Տեսլական</a>
-      <a href="#impact">Ազդեցություն</a>
-      <a href="#events">Իրադարձություններ</a>
-      <a href="#resources">Ռեսուրսներ</a>
-      <a href="#contact">Կապ</a>
-    </div>
-  </nav>
   <header>
     <h1>Առաջընթաց Երիտասարդական ՀԿ</h1>
-    <p>Երիտասարդները մեր ներկան են։ Երիտասարդները՝ հանուն երիտասարդների։</p>
+    <p>Երիտասարդները մեր ներկան են։ | Youth for Youth</p>
   </header>
 
-  <section id="about">
-    <h2>Մեր մասին</h2>
-    <p>«Առաջընթաց» ՀԿ-ն ստեղծվել է 2014 թ. Աշտարակում՝ նպատակ ունենալով հզորացնել երիտասարդներին և համայնքները։</p>
-  </section>
+  <nav>
+    <ul>
+      <li><a href="#about">Մեր մասին</a></li>
+      <li><a href="#mission">Առաքելություն</a></li>
+      <li><a href="#vision">Տեսլական</a></li>
+      <li><a href="#values">Արժեքներ</a></li>
+      <li><a href="#goals">Նպատակներ</a></li>
+      <li><a href="#impact">Ազդեցություն</a></li>
+      <li><a href="#projects">Ծրագրեր</a></li>
+      <li><a href="#team">Մեր թիմը</a></li>
+      <li><a href="#partners">Գործընկերներ</a></li>
+      <li><a href="#supporters">Աջակիցներ</a></li>
+      <li><a href="#resources">Ռեսուրսներ</a></li>
+      <li><a href="#announcements">Հայտարարություններ</a></li>
+      <li><a href="#contact">Կապ</a></li>
+    </ul>
+  </nav>
 
-  <section id="vision">
-    <h2>Տեսլական և առաքելություն</h2>
-    <p>Մենք ձգտում ենք ստեղծել միջավայր, որտեղ յուրաքանչյուր երիտասարդ ունի հնարավորություն իր ներուժը բացահայտելու։</p>
-  </section>
-
-  <section id="impact">
-    <h2>Մեր ազդեցությունը</h2>
-    <div class="impact-grid">
-      <div class="impact-box">
-        <h3>400+</h3>
-        <p>Շահառու երիտասարդ</p>
-      </div>
-      <div class="impact-box">
-        <h3>35+</h3>
-        <p>Ծրագրեր</p>
-      </div>
-      <div class="impact-box">
-        <h3>120+</h3>
-        <p>Կամավորներ</p>
-      </div>
-    </div>
-  </section>
-
-  <section id="events">
-    <h2>Առաջիկա իրադարձություններ</h2>
-    <p>Նոյեմբեր 2024 - Erasmus+ երիտասարդական փոխանակում, Աշտարակ</p>
-  </section>
-
-  <section id="resources">
-    <h2>Ռեսուրսներ</h2>
-    <p>Ավելի ուշ այստեղ հասանելի կլինեն ձեռնարկներ, toolkit-ներ և ուսումնական նյութեր։</p>
-  </section>
-
-  <section id="contact">
-    <h2>Կապ</h2>
-    <p>Հասցե՝ Աշտարակ, Այգեստան 16<br>Էլ․ հասցե՝ programs.pyngo@gmail.com<br>Հեռ․՝ +374 99 590835</p>
-  </section>
+  <main>
+    <section id="about"><h2>Մեր մասին</h2></section>
+    <section id="mission"><h2>Առաքելություն</h2></section>
+    <section id="vision"><h2>Տեսլական</h2></section>
+    <section id="values"><h2>Արժեքներ</h2></section>
+    <section id="goals"><h2>Նպատակներ</h2></section>
+    <section id="impact"><h2>Մեր ազդեցությունը</h2></section>
+    <section id="projects"><h2>Ծրագրեր</h2></section>
+    <section id="team">
+      <h2>Մեր թիմը</h2>
+      <ul>
+        <li>Աշխատակազմ</li>
+        <li>Կամավորներ</li>
+        <li><a href="https://forms.gle/RjcCwkJQbj1DyxbL7" target="_blank">Միացիր մեզ</a></li>
+      </ul>
+    </section>
+    <section id="partners"><h2>Մեր գործընկերները</h2></section>
+    <section id="supporters"><h2>Մեր աջակիցները</h2></section>
+    <section id="resources"><h2>Ռեսուրսներ</h2></section>
+    <section id="announcements"><h2>Հայտարարություններ</h2></section>
+    <section id="contact"><h2>Կապ</h2></section>
+  </main>
 
   <footer>
-    © 2014 - 2025 «Առաջընթաց» Երիտասարդական ՀԿ
+    <p>&copy; 2014 - 2025 Առաջընթաց Երիտասարդական ՀԿ</p>
   </footer>
 </body>
 </html>
