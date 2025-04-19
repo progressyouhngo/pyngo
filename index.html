@@ -1,78 +1,161 @@
+
 <!DOCTYPE html>
 <html lang="hy">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Առաջընթաց Երիտասարդական ՀԿ</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
   <style>
-    * { box-sizing: border-box; margin: 0; padding: 0; scroll-behavior: smooth; }
+    :root {
+      --main-color: #871c1c;
+    }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      scroll-behavior: smooth;
+    }
     body {
       font-family: 'Inter', sans-serif;
-      background: #f9fafb;
-      color: #111827;
-      line-height: 1.6;
+      background: #f9f9f9;
+      color: #333;
     }
     header {
-      background: linear-gradient(135deg, #4f46e5, #6366f1);
-      padding: 40px 20px 30px;
-      text-align: center;
+      background-color: var(--main-color);
       color: white;
-      position: relative;
+      padding: 60px 20px 40px;
+      text-align: center;
     }
-    img.logo {
-      max-width: 120px;
+    header h1 {
+      font-size: 36px;
       margin-bottom: 10px;
     }
-    .lang-switch {
-      position: absolute;
-      right: 20px;
-      top: 20px;
+    header p {
+      font-size: 18px;
+      opacity: 0.9;
     }
-    .lang-switch button {
-      padding: 6px 12px;
-      border: none;
-      border-radius: 4px;
+    nav {
       background: white;
-      color: #4f46e5;
+      padding: 12px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #ddd;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    nav .logo {
+      font-weight: 800;
+      color: var(--main-color);
+      font-size: 20px;
+    }
+    nav .menu a {
+      margin-left: 20px;
+      text-decoration: none;
+      color: var(--main-color);
       font-weight: 600;
-      cursor: pointer;
+    }
+    section {
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+    h2 {
+      font-size: 28px;
+      color: var(--main-color);
+      margin-bottom: 20px;
+    }
+    .impact-grid {
+      display: flex;
+      gap: 30px;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      margin-top: 20px;
+    }
+    .impact-box {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      width: 200px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+    .impact-box h3 {
+      color: var(--main-color);
+      font-size: 28px;
+    }
+    footer {
+      background: #eee;
+      padding: 20px;
+      text-align: center;
+      font-size: 14px;
     }
   </style>
 </head>
 <body>
+  <nav>
+    <div class="logo">Progress NGO</div>
+    <div class="menu">
+      <a href="#about">Մեր մասին</a>
+      <a href="#vision">Տեսլական</a>
+      <a href="#impact">Ազդեցություն</a>
+      <a href="#events">Իրադարձություններ</a>
+      <a href="#resources">Ռեսուրսներ</a>
+      <a href="#contact">Կապ</a>
+    </div>
+  </nav>
   <header>
-    <img src="logo.png" alt="Առաջընթաց ՀԿ Լոգո" class="logo">
-    <h1 class="hy">«Առաջընթաց» Երիտասարդական ՀԿ</h1>
-    <h1 class="en" style="display: none;">“Progress” Youth NGO</h1>
-    <p class="hy">Երիտասարդները մեր ներկան են։ | Երիտասարդները հանուն երիտասարդների</p>
-    <p class="en" style="display: none;">Young people are our present. | Youth for youth.</p>
+    <h1>Առաջընթաց Երիտասարդական ՀԿ</h1>
+    <p>Երիտասարդները մեր ներկան են։ Երիտասարդները՝ հանուն երիտասարդների։</p>
   </header>
-  <main>
-    <section id="about">
-      <h2 class="hy">Մեր մասին</h2>
-      <h2 class="en" style="display: none;">About Us</h2>
-      <p class="hy">Հասցե՝ Աշտարակ, Այգեստան 16, հիմնադրվել է 2014 թվականին։</p>
-      <p class="en" style="display: none;">Address: Aygestan 16, Ashtarak – founded in 2014.</p>
-    </section>
-  </main>
+
+  <section id="about">
+    <h2>Մեր մասին</h2>
+    <p>«Առաջընթաց» ՀԿ-ն ստեղծվել է 2014 թ. Աշտարակում՝ նպատակ ունենալով հզորացնել երիտասարդներին և համայնքները։</p>
+  </section>
+
+  <section id="vision">
+    <h2>Տեսլական և առաքելություն</h2>
+    <p>Մենք ձգտում ենք ստեղծել միջավայր, որտեղ յուրաքանչյուր երիտասարդ ունի հնարավորություն իր ներուժը բացահայտելու։</p>
+  </section>
+
+  <section id="impact">
+    <h2>Մեր ազդեցությունը</h2>
+    <div class="impact-grid">
+      <div class="impact-box">
+        <h3>400+</h3>
+        <p>Շահառու երիտասարդ</p>
+      </div>
+      <div class="impact-box">
+        <h3>35+</h3>
+        <p>Ծրագրեր</p>
+      </div>
+      <div class="impact-box">
+        <h3>120+</h3>
+        <p>Կամավորներ</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="events">
+    <h2>Առաջիկա իրադարձություններ</h2>
+    <p>Նոյեմբեր 2024 - Erasmus+ երիտասարդական փոխանակում, Աշտարակ</p>
+  </section>
+
+  <section id="resources">
+    <h2>Ռեսուրսներ</h2>
+    <p>Ավելի ուշ այստեղ հասանելի կլինեն ձեռնարկներ, toolkit-ներ և ուսումնական նյութեր։</p>
+  </section>
+
+  <section id="contact">
+    <h2>Կապ</h2>
+    <p>Հասցե՝ Աշտարակ, Այգեստան 16<br>Էլ․ հասցե՝ programs.pyngo@gmail.com<br>Հեռ․՝ +374 99 590835</p>
+  </section>
+
   <footer>
-    <p class="hy">© 2014 - 2025 «Առաջընթաց» Երիտասարդական ՀԿ</p>
-    <p class="en" style="display: none;">© 2014 - 2025 Progress Youth NGO</p>
+    © 2014 - 2025 «Առաջընթաց» Երիտասարդական ՀԿ
   </footer>
-  <script>
-    let currentLang = 'hy';
-    function toggleLanguage() {
-      document.querySelectorAll('.hy').forEach(el => el.style.display = currentLang === 'hy' ? 'none' : 'block');
-      document.querySelectorAll('.en').forEach(el => el.style.display = currentLang === 'hy' ? 'block' : 'none');
-      currentLang = currentLang === 'hy' ? 'en' : 'hy';
-    }
-    window.onload = () => {
-      const switcher = document.createElement('div');
-      switcher.className = 'lang-switch';
-      switcher.innerHTML = '<button onclick=\"toggleLanguage()\">EN / HY</button>';
-      document.body.appendChild(switcher);
-    }
-  </script>
 </body>
 </html>
