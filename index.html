@@ -1,1 +1,78 @@
-
+<!DOCTYPE html>
+<html lang="hy">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Առաջընթաց Երիտասարդական ՀԿ</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet" />
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; scroll-behavior: smooth; }
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #f9fafb;
+      color: #111827;
+      line-height: 1.6;
+    }
+    header {
+      background: linear-gradient(135deg, #4f46e5, #6366f1);
+      padding: 40px 20px 30px;
+      text-align: center;
+      color: white;
+      position: relative;
+    }
+    img.logo {
+      max-width: 120px;
+      margin-bottom: 10px;
+    }
+    .lang-switch {
+      position: absolute;
+      right: 20px;
+      top: 20px;
+    }
+    .lang-switch button {
+      padding: 6px 12px;
+      border: none;
+      border-radius: 4px;
+      background: white;
+      color: #4f46e5;
+      font-weight: 600;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="logo.png" alt="Առաջընթաց ՀԿ Լոգո" class="logo">
+    <h1 class="hy">«Առաջընթաց» Երիտասարդական ՀԿ</h1>
+    <h1 class="en" style="display: none;">“Progress” Youth NGO</h1>
+    <p class="hy">Երիտասարդները մեր ներկան են։ | Երիտասարդները հանուն երիտասարդների</p>
+    <p class="en" style="display: none;">Young people are our present. | Youth for youth.</p>
+  </header>
+  <main>
+    <section id="about">
+      <h2 class="hy">Մեր մասին</h2>
+      <h2 class="en" style="display: none;">About Us</h2>
+      <p class="hy">Հասցե՝ Աշտարակ, Այգեստան 16, հիմնադրվել է 2014 թվականին։</p>
+      <p class="en" style="display: none;">Address: Aygestan 16, Ashtarak – founded in 2014.</p>
+    </section>
+  </main>
+  <footer>
+    <p class="hy">© 2014 - 2025 «Առաջընթաց» Երիտասարդական ՀԿ</p>
+    <p class="en" style="display: none;">© 2014 - 2025 Progress Youth NGO</p>
+  </footer>
+  <script>
+    let currentLang = 'hy';
+    function toggleLanguage() {
+      document.querySelectorAll('.hy').forEach(el => el.style.display = currentLang === 'hy' ? 'none' : 'block');
+      document.querySelectorAll('.en').forEach(el => el.style.display = currentLang === 'hy' ? 'block' : 'none');
+      currentLang = currentLang === 'hy' ? 'en' : 'hy';
+    }
+    window.onload = () => {
+      const switcher = document.createElement('div');
+      switcher.className = 'lang-switch';
+      switcher.innerHTML = '<button onclick=\"toggleLanguage()\">EN / HY</button>';
+      document.body.appendChild(switcher);
+    }
+  </script>
+</body>
+</html>
