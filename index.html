@@ -3,29 +3,191 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Առաջընթաց Երիտասարդական ՀԿ</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <title>Առաջընթաց Երիտասարդական ՀԿ | Progress Youth NGO</title>
+  <style>
+    :root { --main-color: #871c1c; }
+    * { margin: 0; padding: 0; box-sizing: border-box; scroll-behavior: smooth; }
+    body {
+      font-family: Arial, sans-serif;
+      background: #fff;
+      color: #111;
+      line-height: 1.6;
+    }
+    header {
+      background: var(--main-color);
+      color: white;
+      padding: 60px 20px;
+      text-align: center;
+    }
+    nav {
+      background: #fff;
+      padding: 15px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #ddd;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    nav .logo {
+      font-weight: bold;
+      font-size: 22px;
+      color: var(--main-color);
+    }
+    nav .menu a {
+      margin-left: 15px;
+      text-decoration: none;
+      color: var(--main-color);
+      font-weight: bold;
+    }
+    .lang-switch {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+    }
+    .lang-switch button {
+      padding: 5px 12px;
+      background: white;
+      border: 1px solid var(--main-color);
+      border-radius: 4px;
+      color: var(--main-color);
+      font-weight: 600;
+      cursor: pointer;
+    }
+    section {
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    h2 {
+      color: var(--main-color);
+      margin-bottom: 20px;
+    }
+    p, li {
+      margin-bottom: 10px;
+      font-size: 16px;
+    }
+    ul { padding-left: 20px; }
+    footer {
+      background: #f0f0f0;
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+    }
+    .hy { display: block; }
+    .en { display: none; }
+  </style>
 </head>
 <body>
   <header>
     <h1 class="hy">Առաջընթաց Երիտասարդական ՀԿ</h1>
-    <h1 class="en" style="display: none;">Progress Youth NGO</h1>
+    <h1 class="en">Progress Youth NGO</h1>
+    <p class="hy">Երիտասարդները մեր ներկան են։ Երիտասարդները՝ հանուն երիտասարդների։</p>
+    <p class="en">Young people are our present. Youth for youth.</p>
   </header>
+
+  <div class="lang-switch"><button onclick="toggleLanguage()">EN / HY</button></div>
+
   <nav>
-    <a href="#about">Մեր մասին</a>
-    <a href="#vision">Տեսլական</a>
-    <a href="#mission">Առաքելություն</a>
-    <a href="#values">Արժեքներ</a>
-    <a href="#goals">Նպատակներ</a>
-    <a href="#impact">Ազդեցություն</a>
-    <a href="#projects">Ծրագրեր</a>
-    <a href="#team">Մեր թիմը</a>
-    <a href="#partners">Գործընկերներ</a>
-    <a href="#supporters">Աջակիցներ</a>
-    <a href="#announcements">Հայտարարություններ</a>
-    <a href="#resources">Ռեսուրսներ</a>
-    <a href="#contact">Կապ</a>
+    <div class="logo">Progress NGO</div>
+    <div class="menu">
+      <a href="#vision">Vision</a>
+      <a href="#mission">Mission</a>
+      <a href="#values">Values</a>
+      <a href="#goals">Goals</a>
+      <a href="#impact">Impact</a>
+      <a href="#projects">Projects</a>
+      <a href="#team">Team</a>
+      <a href="#partners">Partners</a>
+      <a href="#supporters">Supporters</a>
+      <a href="#announcements">Announcements</a>
+      <a href="#resources">Resources</a>
+      <a href="#contact">Contact</a>
+    </div>
   </nav>
+
+  <main>
+    <section id="vision">
+      <h2 class="hy">Տեսլական</h2>
+      <p class="hy">Մենք ձգտում ենք...</p>
+      <h2 class="en">Vision</h2>
+      <p class="en">We strive to...</p>
+    </section>
+
+    <section id="mission">
+      <h2 class="hy">Առաքելություն</h2>
+      <p class="hy">Առաքելությունն է...</p>
+      <h2 class="en">Mission</h2>
+      <p class="en">The mission is...</p>
+    </section>
+
+    <section id="values">
+      <h2 class="hy">Արժեքներ</h2>
+      <ul class="hy"><li>Ապրումակցում</li><li>Ժողովրդավարություն</li></ul>
+      <h2 class="en">Values</h2>
+      <ul class="en"><li>Empathy</li><li>Democracy</li></ul>
+    </section>
+
+    <section id="goals">
+      <h2 class="hy">Նպատակներ</h2>
+      <p class="hy">Պաշտպանել շահերը...</p>
+      <h2 class="en">Goals</h2>
+      <p class="en">To advocate for youth interests...</p>
+    </section>
+
+    <section id="impact">
+      <h2 class="hy">Ազդեցություն</h2>
+      <p class="hy">400+ շահառու, 35+ ծրագիր, 120+ կամավոր</p>
+      <h2 class="en">Impact</h2>
+      <p class="en">400+ beneficiaries, 35+ projects, 120+ volunteers</p>
+    </section>
+
+    <section id="projects">
+      <h2 class="hy">Ծրագրեր</h2>
+      <ul class="hy"><li>Ավարտված</li><li>Ընթացիկ</li><li>Սպասվող</li></ul>
+      <h2 class="en">Projects</h2>
+      <ul class="en"><li>Completed</li><li>Ongoing</li><li>Upcoming</li></ul>
+    </section>
+
+    <section id="team">
+      <h2 class="hy">Մեր թիմը</h2>
+      <ul class="hy"><li>Աշխատակազմ</li><li>Կամավորներ</li><li><a href="https://forms.gle/RjcCwkJQbj1DyxbL7" target="_blank">Դարձիր կամավոր</a></li></ul>
+      <h2 class="en">Our Team</h2>
+      <ul class="en"><li>Staff</li><li>Volunteers</li><li><a href="https://forms.gle/RjcCwkJQbj1DyxbL7" target="_blank">Become a Volunteer</a></li></ul>
+    </section>
+
+    <section id="partners">
+      <h2 class="hy">Գործընկերներ</h2><p class="hy">ICJA, SALTO, Erasmus+ ...</p>
+      <h2 class="en">Partners</h2><p class="en">ICJA, SALTO, Erasmus+ ...</p>
+    </section>
+
+    <section id="supporters">
+      <h2 class="hy">Աջակիցներ</h2><p class="hy">ԵՄ, GIZ, USAID ...</p>
+      <h2 class="en">Supporters</h2><p class="en">EU, GIZ, USAID ...</p>
+    </section>
+
+    <section id="announcements">
+      <h2 class="hy">Հայտարարություններ</h2><p class="hy">Մեր վերջին նորությունները այստեղ կհայտարարվեն։</p>
+      <h2 class="en">Announcements</h2><p class="en">Our latest updates will appear here.</p>
+    </section>
+
+    <section id="resources">
+      <h2 class="hy">Ռեսուրսներ</h2><p class="hy">Ձեռնարկներ, գործիքակազմ, PDF-եր</p>
+      <h2 class="en">Resources</h2><p class="en">Manuals, toolkits, PDFs</p>
+    </section>
+
+    <section id="contact">
+      <h2 class="hy">Կապ</h2><p class="hy">Աշտարակ, Այգեստան 16 | programs.pyngo@gmail.com | +374 99 590835</p>
+      <h2 class="en">Contact</h2><p class="en">Ashtarak, Aygestan 16 | programs.pyngo@gmail.com | +374 99 590835</p>
+    </section>
+  </main>
+
+  <footer>
+    <p class="hy">© 2014 - 2025 Առաջընթաց Երիտասարդական ՀԿ</p>
+    <p class="en" style="display:none;">© 2014 - 2025 Progress Youth NGO</p>
+  </footer>
+
   <script>
     let currentLang = 'hy';
     function toggleLanguage() {
